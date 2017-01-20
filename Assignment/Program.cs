@@ -10,6 +10,17 @@ namespace Assignment
     {
         static void Main(string[] args)
         {
+            //Generate a new board of seats
+            Board board = new Board();
+
+            //The looping console app
+            while (true)
+            {
+                Console.WriteLine("The seat layout is:");
+                board.ShowSeats();
+                board.PickSeat();
+            }
+            
         }
     }
 }
